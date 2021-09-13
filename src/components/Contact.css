@@ -1,0 +1,88 @@
+.contact_form,
+.contact_info {
+  width: 50%;
+  padding: 0 15px;
+}
+
+.contact_form .input_group {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.contact_form .input_control::placeholder {
+  color: var(--blue-dark);
+  opacity: 0.8;
+  font-weight: 300;
+}
+
+.contact_form .input_control {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: var(--white-alpha-25);
+  padding: 0 20px;
+  color: var(--blue-dark);
+  border: 1px solid transparent;
+  transition: bordr-color 0.3s ease;
+}
+
+.contact_form .input_control:focus {
+  border-color: var(--white-alpha-40);
+}
+
+.contact_form textarea.input_control {
+  height: 120px;
+  resize: none;
+  padding: 15px;
+}
+
+.contact_info_item {
+  margin: 30px;
+  padding: 0 0 0 20px;
+}
+
+.contact_info_item h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+  margin: 5px 0 0 5px;
+}
+
+.contact_info_item .social_links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background-color: var(--white-alpha-25);
+  border: 1px solid var(--white-alpha-40);
+  color: var(--main-color);
+  border-radius: 50%;
+  margin: 6px 4px 0 0;
+  transition: all 0.3s ease;
+}
+
+.contact_info_item .social_links a:hover {
+  color: var(--white);
+  background-color: var(--main-color);
+}
+
+@media (max-width: 767px) {
+  .contact_form,
+  .contact_info {
+    width: 100%;
+  }
+
+  .contact_info {
+    order: -1;
+    margin-bottom: 15px;
+  }
+
+  .contact_info_item{
+      padding: 0;
+  }
+}

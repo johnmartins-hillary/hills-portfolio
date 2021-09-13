@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+.app {
+  max-width: 1200px;
+  margin: auto;
+  transition: all 0.5s ease-in-out;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app.fade_out {
+  opacity: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 200;
+  opacity: 0.5;
+  visibility: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* pagee loader */
+
+.page_loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  background-color: var(--white-alpha-25);
+  backdrop-filter: var(--backdrop-filter-blur);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  transition: opacity 0.6s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.page_loader.fade_out{
+    opacity: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.page_loader div {
+  border: 2px solid transparent;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.6;
+  border-top-color: transparent !important;
+  border-bottom-color: transparent !important;
+  animation: spin 1s linear infinite;
+}
+
+.page_loader div:nth-child(1) {
+  height: 60px;
+  width: 60px;
+  border-color: var(--main-color);
+}
+.page_loader div:nth-child(2) {
+  height: 45px;
+  width: 45px;
+  border-color: var(--blue);
+  animation-duration: 1.2s;
+}
+.page_loader div:nth-child(3) {
+  height: 30px;
+  width: 30px;
+  border-color: var(--orange);
+}
+
+.overlay.active {
+  visibility: visible;
+}
+
+.bg-circles {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  max-width: 1200px;
+  width: calc(100% - 30px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.bg_circles div {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.bg_circles .circle1 {
+  height: 60px;
+  width: 60px;
+  background-color: var(--blue);
+  left: 5%;
+  top: 10%;
+  opacity: 0.3;
+  animation: zoomInOut 8s linear infinite;
+}
+.bg_circles .circle2 {
+  height: 80px;
+  width: 80px;
+  background-color: var(--main-color);
+  left: 30%;
+  top: 50%;
+  opacity: 0.4;
+  animation: bounceTop 5s ease-in infinite;
+}
+
+.bg-circles .circle3 {
+  height: 120px;
+  width: 120px;
+  background-color: var(--white);
+  top: 40%;
+  right: -60px;
+  opacity: 0.6;
+}
+
+.bg_circles .circle4 {
+  height: 50px;
+  width: 50px;
+  background-color: var(--orange);
+  top: 80%;
+  left: -30px;
+  opacity: 0.6;
+}
+
+@keyframes zoomInOut {
+  0%,
+  100% {
+    transform: scale(0.5);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: scale(1);
   }
+}
+
+@keyframes bounceTop {
+  0%,
+  100% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
