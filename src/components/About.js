@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import "./About.css";
 import pic1 from "../images/pic1.webp";
-import { useRef } from "react";
+
 
 // const tabsContainer = document.querySelector(".about_tabs");
 // const aboutSection = document.querySelector(".about_section");

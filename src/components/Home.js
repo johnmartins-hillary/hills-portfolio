@@ -16,7 +16,7 @@ function Home({hidesection}) {
           </div>
           <div className="home_img">
               <div className="img_box">
-                  <img src={pic1} alt="profile-image" />
+                  <img src={pic1} alt="profile" />
               </div>
           </div>
         </div>

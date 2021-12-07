@@ -25,6 +25,7 @@ body {
   line-height: 1.5;
   -webkit-top-highlight-color: transparent;
   padding: 35px 15px;
+  overflow-x: hidden;
 }
 
 body.hide_scrolling {
@@ -75,7 +76,7 @@ variables
   --pink-light: #efa2b4;
   --cyan-light: #aef1ee;
   --white: #ffffff;
-  --white-alpha-40: rgba(255, 255, 255, 0.4);
+  --white-alpha-40: rgba(255, 255, 255, 0.40);
   --white-alpha-25: rgba(255, 255, 255, 0.25);
   --backdrop-filter-blur: blur(5px);
 }

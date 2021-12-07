@@ -4,14 +4,16 @@ import "./Portfolio.css";
 import pic1 from "../images/pic1.webp";
 import pic2 from "../images/pic2.webp";
 
-import PopUp from "./PopUp";
-
 function Portfolio({showpopup, handlePopup, closePopup}) {
  
 
   return (
     <div>
-      <section className="portflio_section sec_padding" onClick={handlePopup} id="portfolio">
+      <section
+        className="portflio_section sec_padding"
+        onClick={handlePopup}
+        id="portfolio"
+      >
         <div className="container">
           <div className="row">
             <div className="section_title">
@@ -51,9 +53,13 @@ function Portfolio({showpopup, handlePopup, closePopup}) {
                       Role - <span>Frontend</span>
                     </li>
                     <li>
-                      view Online -{" "}
+                      view Online
                       <span>
-                        <a href="#" target="_blank">
+                        <a
+                          href="https://www.google.com"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           www.domain.com
                         </a>
                       </span>
@@ -73,7 +79,9 @@ function Portfolio({showpopup, handlePopup, closePopup}) {
               <div className="portfolio_item_details">
                 <div className="description">
                   <p>
-                    Fashgold is an ecommerce app hat is usdfor making the national eccombihfbkb app for the nation but is created on the yaer -----
+                    Fashgold is an ecommerce app hat is usdfor making the
+                    national eccombihfbkb app for the nation but is created on
+                    the yaer -----
                   </p>
                 </div>
                 <div className="general_info">
@@ -90,7 +98,11 @@ function Portfolio({showpopup, handlePopup, closePopup}) {
                     <li>
                       view Online -{" "}
                       <span>
-                        <a href="#" target="_blank">
+                        <a
+                          href="https://www.google.com"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           www.domain.com
                         </a>
                       </span>
@@ -130,9 +142,13 @@ function Portfolio({showpopup, handlePopup, closePopup}) {
                       Role - <span>Frontend</span>
                     </li>
                     <li>
-                      view Online -{" "}
+                      view Online
                       <span>
-                        <a href="#" target="_blank">
+                        <a
+                          href="https://www.google.com"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           www.domain.com
                         </a>
                       </span>
@@ -172,9 +188,13 @@ function Portfolio({showpopup, handlePopup, closePopup}) {
                       Role - <span>Frontend</span>
                     </li>
                     <li>
-                      view Online -{" "}
+                      view Online
                       <span>
-                        <a href="#" target="_blank">
+                        <a
+                          href="https://www.google.com"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           www.domain.com
                         </a>
                       </span>
@@ -214,9 +234,13 @@ function Portfolio({showpopup, handlePopup, closePopup}) {
                       Role - <span>Frontend</span>
                     </li>
                     <li>
-                      view Online -{" "}
+                      view Online
                       <span>
-                        <a href="#" target="_blank">
+                        <a
+                          href="https://www.google.com"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           www.domain.com
                         </a>
                       </span>
@@ -256,9 +280,13 @@ function Portfolio({showpopup, handlePopup, closePopup}) {
                       Role - <span>Frontend</span>
                     </li>
                     <li>
-                      view Online -{" "}
+                      view Online
                       <span>
-                        <a href="#" target="_blank">
+                        <a
+                          href="https://www.google.com"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           www.domain.com
                         </a>
                       </span>

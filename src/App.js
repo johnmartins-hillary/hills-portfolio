@@ -11,30 +11,16 @@ function App() {
   const [showpopup, setShowpopup] = useState(false);
   const [hidesection, setHidesection] = useState(false);
 
-  // -------------------About Tabs--------------
-  // const tabsContainer = window.document.querySelector(".about_tabs"),
-  // aboutSection = window.document.querySelector(".about_section");
-
-  // const changeTab = (e) => {
-  //   if(e.target.classList.contains("tab_item") && !e.target.classList.contains(".active")){
-  //     tabsContainer.querySelector(".active").classList.remove(".active");
-  //     e.target.classList.add(".active");
-  //     const target = e.target.getAttribute("data-target");
-  //     aboutSection.querySelector(".tab_content.active").classList.remove(".active");
-  //     aboutSection.querySelector(target).classList.add(".active")
-  //   }
-  // }
-
   window.addEventListener("load", () => {
     document.querySelector(".app").classList.remove("hidden");
-    document.querySelector(".home_section").classList.add("active")
+    document.querySelector(".home_section").classList.add("active");
 
     // page loader
     document.querySelector(".page_loader").classList.add("fade-out");
-    setTimeout(() =>{
-      document.querySelector(".page_loader").style.display = "none"
-    }, 600)
-  })
+    setTimeout(() => {
+      document.querySelector(".page_loader").style.display = "none";
+    }, 600);
+  });
 
   const toggleNav = () => {
     setHidesection(!hidesection);
@@ -95,11 +81,11 @@ function App() {
 
   return (
     <div>
-<div className="page_loader">
-  <div></div>
-  <div></div>
-  <div></div>
-</div>
+      <div className="page_loader">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
 
       <div className="bg_circles">
         <div className="circle1"></div>

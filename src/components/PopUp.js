@@ -15,7 +15,6 @@ function PopUp({ showpopup, closePopup }) {
             <div className="pp_thumbnail">
               <img src={pic1} alt="pp_thumbnail" />
             </div>
-            <h3></h3>
           </div>
           <div className="pp_body"></div>
         </div>

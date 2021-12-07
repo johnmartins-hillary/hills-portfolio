@@ -3,7 +3,7 @@ import "./Home.css";
 import "./Contact.css";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
-import TwitterIcon from "@material-ui/icons/Twitter";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 function Contact() {
   return (
@@ -64,18 +64,30 @@ function Contact() {
             </div>
             <div className="contact_info_item">
               <h3>Phone</h3>
-              <p>+234 8066174285</p>
+              <p>+234 7044377963</p>
             </div>
             <div className="contact_info_item">
               <h3>follow me</h3>
               <div className="social_links">
-                <a href="#" target="_blank">
+                <a
+                  href="https://www.facebook.com/hillary"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FacebookIcon />
                 </a>
-                <a href="#" target="_blank">
-                  <TwitterIcon />
+                <a
+                  href="https://www.linkedin.com/in/hillary-chukwuebuka-a163a41b6"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <LinkedInIcon />
                 </a>
-                <a href="#" target="_blank">
+                <a
+                  href="https://www.instagram.com/hillaryekwealor?r=nametag"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <InstagramIcon />
                 </a>
               </div>
